@@ -1,0 +1,11 @@
+- path_pattern: /home/Downloads/*
+  dest: /backup/Downloads
+  every: 1M
+
+- path_pattern: /var/log/syslog*
+  dest: /backup/logs
+  every: 1h
+
+- path_pattern: /data/*/output/*
+  dest: /backup/data/outputs
+  every: 3d
